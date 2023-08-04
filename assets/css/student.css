@@ -1,0 +1,54 @@
+#student-container {
+  padding: 40px; }
+  #student-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px; }
+  #student-container .student-main-section {
+    margin-top: 20px; }
+    #student-container .student-main-section form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #student-container .student-main-section form input,
+      #student-container .student-main-section form select {
+        width: 48%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px; }
+        #student-container .student-main-section form input:focus,
+        #student-container .student-main-section form select:focus {
+          outline: none;
+          border-color: #007bff; }
+      #student-container .student-main-section form input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer; }
+        #student-container .student-main-section form input[type="submit"]:hover {
+          background-color: #0056b3; }
+    #student-container .student-main-section > ul {
+      list-style: none;
+      margin-top: 20px; }
+      #student-container .student-main-section > ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; }
+        #student-container .student-main-section > ul li a {
+          text-decoration: none;
+          color: #333; }
+          #student-container .student-main-section > ul li a:hover {
+            text-decoration: underline; }
+        #student-container .student-main-section > ul li .delete-item {
+          color: #ff0000;
+          margin-left: 10px;
+          cursor: pointer; }
+          #student-container .student-main-section > ul li .delete-item:hover {
+            color: #cc0000; }
+    #student-container .student-main-section .no-students {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333; }

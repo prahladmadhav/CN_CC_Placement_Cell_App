@@ -1,0 +1,56 @@
+#result-single-container {
+    padding: 0 20px;
+    h1 {
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Form styles */
+    form {
+        margin-top: 20px;
+        select {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            &:focus {
+                outline: none;
+                border-color: #007bff;
+            }
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+
+    .result-single-section {
+        display: flex;
+        /* Student details styles */
+        .student-details {
+            width: 50%;
+            div {
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Result status styles */
+        .interview-details {
+            width: 50%;
+            div {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

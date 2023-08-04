@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/css/interview_single.css" />
+<div id="result-single-container">
+    <h1><%= title %>'s Interview</h1>
+    <% if (locals.user) { %>
+        <form action="/interview/edit/<%= interviewSingle._id %>" id="edit-interview-form" method="POST">
+            <input type="text" name="name" placeholder="Enter Company Name" value="<%= interviewSingle.company %>" required />
+            <input type="date" name="date" placeholder="Enter Interview Date" value="<%= interviewSingle.inputDate %>" required />
+            <input type="submit" value="Update" />
+        </form>
+    <% } else { %>
+        <div class="interview-details">
+            <div>Company Name: <%= interviewSingle.company %></div>
+            <div>Interview Date: <%= interviewSingle.formatedDate %></div>
+        </div>
+    <% } %>
+</div>

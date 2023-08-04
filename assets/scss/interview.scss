@@ -1,0 +1,67 @@
+#interview-container {
+    padding: 40px;
+    h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .interview-main-section {
+        margin-top: 20px;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                &:focus {
+                    outline: none;
+                    border-color: #007bff;
+                }
+            }
+            input[type="submit"] {
+                background-color: #007bff;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+        }
+        > ul {
+            list-style: none;
+            margin-top: 20px;
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .delete-item {
+                    color: #ff0000;
+                    margin-left: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        color: #cc0000;
+                    }
+                }
+            }
+        }
+        .no-interviews {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    }
+}

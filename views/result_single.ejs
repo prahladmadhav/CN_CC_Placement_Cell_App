@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="/css/result_single.css" />
+<div id="result-single-container">
+    <h1><%= resultSingle.student.name %> | <%= resultSingle.interview.company %> - <%= resultSingle.interview.formatedDate %></h1>
+    <% if (locals.user) { %>
+        <form action="/interview/edit/<%= resultSingle._id %>" id="edit-result-form" method="POST">
+            <select type="text" name="interview" required>
+                <% for(interview of interviews){ %>
+                    <option value="<%= interview._id %>"
+                        <% if (interview.id == resultSingle.interview.id) { %>
+                            selected
+                        <% } %>
+                    ><%= interview.company %> - <%= interview.formatedDate %></option>
+                <% } %>
+            </select>
+            <select type="text" name="student" required>
+                <% for(student of students){ %>
+                    <option value="<%= student._id %>"
+                        <% if (student.id == resultSingle.student.id) { %>
+                            selected
+                        <% } %>
+                        ><%= student.name %></option>
+                <% } %>
+            </select>
+            <select type="text" name="status" required>
+                    <option value="pass"
+                    <% if (resultSingle.status == "pass") { %>
+                        selected
+                    <% } %>
+                    >PASS</option>
+                    <option value="fail"
+                    <% if (resultSingle.status == "fail") { %>
+                        selected
+                    <% } %>
+                    >FAIL</option>
+                    <option value="onHold"
+                    <% if (resultSingle.status == "onHold") { %>
+                        selected
+                    <% } %>
+                    >On Hold</option>
+                    <option value="notAttempted"
+                    <% if (resultSingle.status == "notAttempted") { %>
+                        selected
+                    <% } %>
+                    >Didn't Attempt</option>
+            </select>
+            <input type="submit" value="Update" />
+        </form>
+    <% } else { %>
+    <div class="result-single-section">
+        <div class="student-details">
+            <div>Student ID: <%= resultSingle.student._id %></div>
+            <div>Student Name: <%= resultSingle.student.name %></div>
+            <div>Student College: <%= resultSingle.student.college %></div>
+            <div>Student Status: <%= (resultSingle.student.isPlaced ? "Placed" : "Not Placed") %></div>
+            <div>DSA Final Score: <%= resultSingle.student.dsaScore %></div>
+            <div>WebD Final Score: <%= resultSingle.student.webdScore %></div>
+            <div>React Final Score: <%= resultSingle.student.reactScore %></div>
+        </div>
+        <div class="interview-details">
+            <div>Interview Date: <%= resultSingle.interview.formatedDate %></div>
+            <div>Interview Company: <%= resultSingle.interview.company %></div>
+            <div class="result-status">Interview Student Result: <%= resultStatus %></div>
+        </div>
+    </div>
+    <% } %>
+</div>

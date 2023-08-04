@@ -1,0 +1,42 @@
+#result-single-container {
+    padding: 40px;
+    h1 {
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        input {
+            width: 48%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            &:focus {
+                outline: none;
+                border-color: #007bff;
+            }
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+    .interview-details {
+        margin-top: 20px;
+        div {
+            margin-bottom: 10px;
+        }
+    }
+}

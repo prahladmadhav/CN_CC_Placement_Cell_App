@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/interview.css" />
+<div id="interview-container">
+    <h1>Interview Desk</h1>
+    <div class="interview-main-section">
+        <% if (locals.user){ %>
+            <form action="/interview/create" id="new-interview-form" method="POST">
+                <input type="text" name="company" placeholder="Enter Company Name" required />
+                <input type="date" name="date" placeholder="Enter Interview Date" required />
+                <input type="submit" value="Create" />
+            </form>
+        <% } %>
+        <% if (interviews && interviews.length) { %>
+            <ul>
+                <% for(interview of interviews){ %>
+                    <%- include("_interview_li") -%>
+                <% } %>
+            </ul>
+        <% } else { %>
+            <div class="no-interviews">No Interviews Exist</div>
+        <% } %>
+    </div>
+</div>

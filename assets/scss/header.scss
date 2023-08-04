@@ -1,0 +1,48 @@
+header#layout-header {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    nav {
+        width: 100%;
+        padding: 10px 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline; // Align items vertically centered
+
+        .header-logo {
+            p {
+                margin: 0; // Remove default margin for the paragraph
+                h1 {
+                    a {
+                        text-decoration: none; // Remove underline from the link
+                        color: #333; // Set link color
+                        font-size: 24px; // Adjust font size to your preference
+                        font-weight: bold; // Set font weight to bold
+                    }
+                }
+            }
+        }
+
+        .header-grow {
+            flex-grow: 1;
+        }
+
+        .header-links {
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none; // Remove default list style
+                li {
+                    padding: 0 10px; // Add some padding to the list items
+                    a {
+                        text-decoration: none; // Remove underline from the links
+                        color: #666; // Set link color
+                        &:hover {
+                            color: #333; // Change link color on hover
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

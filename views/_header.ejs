@@ -1,0 +1,40 @@
+<header id="layout-header">
+    <nav>
+        <div class="header-logo">
+            <p>
+                <h1>
+                    <a href="/">Placement Cell</a>
+                </h1>
+            </p>
+        </div>
+        <div class="header-grow"></div>
+        <div class="header-links">
+            <ul>
+                <li>
+                    <a href="/student">Student Desk</a>
+                </li>
+                <li>
+                    <a href="/interview">Interview Desk</a>
+                </li>
+                <li>
+                    <a href="/result">Result Desk</a>
+                </li>
+                <% if (locals.user){ %>
+                    <li>
+                        <a href="/users/profile/<%= user.id %>"><%= user.name %></a>
+                    </li>
+                    <li>
+                        <a href="/users/sign-out">Sign Out</a>
+                    </li>
+                <% }else{ %>
+                    <li>
+                        <a href="/users/sign-in">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="/users/sign-up">Sign Up</a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+</header>

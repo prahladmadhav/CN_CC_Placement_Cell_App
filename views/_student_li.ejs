@@ -1,0 +1,6 @@
+<li id="student-<%= student._id %>">
+    <a href="/student/<%= student._id %>"><%= student.name %></a>
+    <% if (locals.user){ %>
+        <a class="delete-item" href="/student/destroy/<%= student._id %>" onclick="return confirm('Are you sure?')"><i class="fa fa-trash" aria-hidden="true"></i></a>
+    <% } %>
+</li>

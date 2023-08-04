@@ -1,0 +1,6 @@
+<li id="result-<%= result._id %>">
+    <a href="/result/<%= result._id %>"><%= result.student.name %> | <%= result.interview.company %> - <%= result.interview.formatedDate %></a>
+    <% if (locals.user){ %>
+        <a class="delete-item" href="/result/destroy/<%= result._id %>" onclick="return confirm('Are you sure?')"><i class="fa fa-trash" aria-hidden="true"></i></a>
+    <% } %>
+</li>

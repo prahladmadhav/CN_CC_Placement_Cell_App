@@ -1,0 +1,33 @@
+#result-single-container {
+  padding: 40px; }
+  #result-single-container h1 {
+    font-size: 32px;
+    padding-bottom: 20px; }
+  #result-single-container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    #result-single-container form input {
+      width: 48%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px; }
+      #result-single-container form input:focus {
+        outline: none;
+        border-color: #007bff; }
+    #result-single-container form input[type="submit"] {
+      width: 100%;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer; }
+      #result-single-container form input[type="submit"]:hover {
+        background-color: #0056b3; }
+  #result-single-container .interview-details {
+    margin-top: 20px; }
+    #result-single-container .interview-details div {
+      margin-bottom: 10px; }

@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/student.css" />
+<div id="student-container">
+    <h1>Student Desk</h1>
+    <div class="student-main-section">
+        <% if (locals.user){ %>
+            <form action="/student/create" id="new-student-form" method="POST">
+                <input type="text" name="name" placeholder="Enter Name" required />
+                <input type="text" name="email" placeholder="Enter Email" required />
+                <input type="text" name="college" placeholder="Enter College Name" required />
+                <input type="number" name="age" placeholder="Enter Age" min="1" max="100" required />
+                <select name="isPlaced" required>
+                    <option value="no" selected>Not Placed</option>
+                    <option value="yes">Placed</option>
+                </select>
+                <input type="number" name="dsaScore" placeholder="Enter DSA Score" min="0" required />
+                <input type="number" name="webdScore" placeholder="Enter Web Dev Score" min="0" required />
+                <input type="number" name="reactScore" placeholder="Enter React Score" min="0" required />
+                <input type="text" name="batch" placeholder="Enter Batch" required />
+                <input type="submit" value="Create" />
+            </form>
+        <% } %>
+        <% if (students && students.length) { %>
+            <ul>
+                <% for(student of students){ %>
+                    <%- include("_student_li") -%>
+                <% } %>
+            </ul>
+        <% } else { %>
+            <div class="no-students">No Students Exist</div>
+        <% } %>
+    </div>
+</div>

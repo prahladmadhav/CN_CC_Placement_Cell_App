@@ -1,0 +1,35 @@
+{
+  "name": "cn_cc_placement_cell_app",
+  "version": "1.0.0",
+  "description": "This application that will make it possible for Career Camp employees to make reports for Students and the interviews they attend.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prahladmadhav/CN_CC_Placement_Cell_App.git"
+  },
+  "author": "Madhav Prahlad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prahladmadhav/CN_CC_Placement_Cell_App/issues"
+  },
+  "homepage": "https://github.com/prahladmadhav/CN_CC_Placement_Cell_App#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "^1.4.6",
+    "csv-writer": "^1.6.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "moment": "^2.29.4",
+    "mongoose": "^7.0.3",
+    "node-sass-middleware": "^1.0.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}

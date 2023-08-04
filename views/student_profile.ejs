@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/student_profile.css" />
+<div class="student_profile_container">
+    <h1><%= title %>'s Profile</h1>
+    <% if (locals.user) { %>
+        <form action="/student/edit/<%= profileStudent._id %>" id="edit-student-form" method="POST">
+            <input type="text" name="name" placeholder="Enter Name" value="<%= profileStudent.name %>" required />
+            <input type="text" name="email" placeholder="Enter Email" value="<%= profileStudent.email %>" required />
+            <input type="text" name="college" placeholder="Enter College Name" value="<%= profileStudent.college %>" required />
+            <input type="number" name="age" placeholder="Enter Age" min="1" max="100" value="<%= profileStudent.age %>" required />
+            <select name="isPlaced" required>
+                <% if(profileStudent.isPlaced){ %>
+                    <option value="no">Not Placed</option>
+                    <option value="yes"selected>Placed</option>
+                <% } else { %>
+                    <option value="no" selected>Not Placed</option>
+                    <option value="yes">Placed</option>
+                <% } %>
+            </select>
+            <input type="number" name="dsaScore" placeholder="Enter DSA Score" min="0" value="<%= profileStudent.dsaScore %>" required />
+            <input type="number" name="webdScore" placeholder="Enter Web Dev Score" min="0" value="<%= profileStudent.webdScore %>" required />
+            <input type="number" name="reactScore" placeholder="Enter React Score" min="0" value="<%= profileStudent.reactScore %>" required />
+            <input type="text" name="batch" placeholder="Enter Batch" value="<%= profileStudent.batch %>" required />
+            <input type="submit" value="Update" />
+        </form>
+    <% } else { %>
+        <div class="profile-details">
+            <div>Name: <%= profileStudent.name %></div>
+            <div>Email: <%= profileStudent.email %></div>
+            <div>College Name: <%= profileStudent.college %></div>
+            <div>Age: <%= profileStudent.age %></div>
+            <div>Placement Status: <%= (profileStudent.isPlaced ? "Placed" : "Not Placed") %></div>
+            <div>DSA Score: <%= profileStudent.dsaScore %></div>
+            <div>Web Dev Score: <%= profileStudent.webdScore %></div>
+            <div>React Score: <%= profileStudent.reactScore %></div>
+            <div>Batch: <%= profileStudent.batch %></div>
+        </div>
+    <% } %>
+</div>

@@ -1,0 +1,59 @@
+#result-container {
+  padding: 40px; }
+  #result-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px; }
+  #result-container .result-main-section {
+    margin-top: 20px; }
+    #result-container .result-main-section a {
+      text-decoration: none;
+      color: #007bff; }
+      #result-container .result-main-section a:hover {
+        text-decoration: underline; }
+    #result-container .result-main-section form {
+      margin-top: 20px; }
+      #result-container .result-main-section form select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px; }
+        #result-container .result-main-section form select:focus {
+          outline: none;
+          border-color: #007bff; }
+      #result-container .result-main-section form input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer; }
+        #result-container .result-main-section form input[type="submit"]:hover {
+          background-color: #0056b3; }
+    #result-container .result-main-section > div {
+      margin-top: 20px; }
+      #result-container .result-main-section > div a {
+        text-decoration: none;
+        color: #007bff; }
+        #result-container .result-main-section > div a:hover {
+          text-decoration: underline; }
+    #result-container .result-main-section ul {
+      list-style: none; }
+      #result-container .result-main-section ul li {
+        margin-top: 10px; }
+        #result-container .result-main-section ul li a {
+          text-decoration: none;
+          color: #333; }
+          #result-container .result-main-section ul li a:hover {
+            text-decoration: underline; }
+        #result-container .result-main-section ul li .delete-item {
+          color: #ff0000;
+          margin-left: 10px; }
+          #result-container .result-main-section ul li .delete-item:hover {
+            color: #cc0000; }
+    #result-container .result-main-section .no-results {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333; }
