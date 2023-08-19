@@ -2,10 +2,12 @@ footer#layout-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end; }
-  footer#layout-footer .footer-nav ul {
-    padding-bottom: 5px;
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
+  justify-content: end;
+}
+footer#layout-footer .footer-nav ul {
+  padding-bottom: 5px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

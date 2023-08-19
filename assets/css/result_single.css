@@ -1,41 +1,53 @@
 #result-single-container {
   padding: 0 20px;
-  /* Form styles */ }
-  #result-single-container h1 {
-    font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-  #result-single-container form {
-    margin-top: 20px; }
-    #result-single-container form select {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px; }
-      #result-single-container form select:focus {
-        outline: none;
-        border-color: #007bff; }
-    #result-single-container form input[type="submit"] {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer; }
-      #result-single-container form input[type="submit"]:hover {
-        background-color: #0056b3; }
-  #result-single-container .result-single-section {
-    display: flex;
-    /* Student details styles */
-    /* Result status styles */ }
-    #result-single-container .result-single-section .student-details {
-      width: 50%; }
-      #result-single-container .result-single-section .student-details div {
-        margin-bottom: 10px; }
-    #result-single-container .result-single-section .interview-details {
-      width: 50%; }
-      #result-single-container .result-single-section .interview-details div {
-        margin-bottom: 10px; }
+  /* Form styles */
+}
+#result-single-container h1 {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#result-single-container form {
+  margin-top: 20px;
+}
+#result-single-container form select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#result-single-container form select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+#result-single-container form input[type=submit] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#result-single-container form input[type=submit]:hover {
+  background-color: #0056b3;
+}
+#result-single-container .result-single-section {
+  display: flex;
+  /* Student details styles */
+  /* Result status styles */
+}
+#result-single-container .result-single-section .student-details {
+  width: 50%;
+}
+#result-single-container .result-single-section .student-details div {
+  margin-bottom: 10px;
+}
+#result-single-container .result-single-section .interview-details {
+  width: 50%;
+}
+#result-single-container .result-single-section .interview-details div {
+  margin-bottom: 10px;
+}

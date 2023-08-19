@@ -19,7 +19,7 @@
   "homepage": "https://github.com/prahladmadhav/CN_CC_Placement_Cell_App#readme",
   "dependencies": {
     "connect-flash": "^0.1.1",
-    "connect-mongo": "^2.0.3",
+    "connect-mongo": "^5.0.0",
     "cookie-parser": "^1.4.6",
     "csv-writer": "^1.6.0",
     "ejs": "^3.1.9",
@@ -27,8 +27,7 @@
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.3",
     "moment": "^2.29.4",
-    "mongoose": "^7.0.3",
-    "node-sass-middleware": "^1.0.1",
+    "mongoose": "^7.4.3",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0"
   }
