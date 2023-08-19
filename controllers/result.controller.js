@@ -150,12 +150,12 @@ module.exports.destroy = async (req, res) => {
 };
 module.exports.edit = async (req, res) => {
     try {
-        let result = await Interview.findById(req.params.id);
+        let result = await Result.findById(req.params.id);
         if (result) {
             let interview = await Interview.findById(req.body.interview);
             let student = await Student.findById(req.body.student);
             if (interview && student) {
-                result = await Interview.findByIdAndUpdate(req.params.id, req.body);
+                result = await Result.findByIdAndUpdate(req.params.id, req.body);
                 if (req.xhr) {
                     return res.status(200).json({
                         success: true,

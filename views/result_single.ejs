@@ -2,7 +2,7 @@
 <div id="result-single-container">
     <h1><%= resultSingle.student.name %> | <%= resultSingle.interview.company %> - <%= resultSingle.interview.formatedDate %></h1>
     <% if (locals.user) { %>
-        <form action="/interview/edit/<%= resultSingle._id %>" id="edit-result-form" method="POST">
+        <form action="/result/edit/<%= resultSingle._id %>" id="edit-result-form" method="POST">
             <select type="text" name="interview" required>
                 <% for(interview of interviews){ %>
                     <option value="<%= interview._id %>"
